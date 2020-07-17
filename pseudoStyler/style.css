@@ -1,0 +1,21 @@
+.red {
+    background-color: red;
+    height: 250px;
+    width: 250px;
+}
+
+.red:hover {
+    background-color: blue;
+}
+
+.link1:hover {
+    color: orange;
+}
+
+.link2:visited {
+    color: green;
+}
+
+a:default {
+    color: black;
+}
