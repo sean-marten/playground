@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Random Numbers</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var userResponse = prompt("Rock, paper or scissors?").toLowerCase();
+
+      var correctResponse = false;
+      checkForValidRepsone(userResponse);
+
+      while (!correctResponse) {
+        userResponse = prompt(
+          "Invalid input, please select an answer again. Rock, paper or scissors?"
+        ).toLowerCase();
+        checkForValidRepsone(userResponse);
+      }
+
+      function checkForValidRepsone(userResponse) {
+        switch (userResponse) {
+          case "rock":
+          case "paper":
+          case "scissors":
+            correctResponse = true;
+        }
+      }
+
+      var computerNumber = Math.floor(Math.random() * 2);
+      var computerDecision;
+
+      switch (computerNumber) {
+        case 0:
+          computerDecision = "rock";
+          break;
+        case 1:
+          computerDecision = "paper";
+          break;
+        case 2:
+          computerDecision = "scissors";
+          break;
+      }
+
+      if (userResponse == computerDecision) {
+        alert(
+          `You tied! You chose ${userResponse} and the computer chose ${computerDecision}`
+        );
+      } else if (userResponse == "rock" && computerDecision == "scissors") {
+        alert(
+          `You won! you chose ${userResponse} and the computer chose ${computerDecision}`
+        );
+      } else if (userResponse == "rock" && computerDecision == "paper") {
+        alert(
+          `You lost! you chose ${userResponse} and the computer chose ${computerDecision}`
+        );
+      } else if (userResponse == "scissors" && computerDecision == "paper") {
+        alert(
+          `You won! you chose ${userResponse} and the computer chose ${computerDecision}`
+        );
+      } else if (userResponse == "scissors" && computerDecision == "rock") {
+        alert(
+          `You lost! you chose ${userResponse} and the computer chose ${computerDecision}`
+        );
+      } else if (userResponse == "paper" && computerDecision == "scissors") {
+        alert(
+          `You lost! you chose ${userResponse} and the computer chose ${computerDecision}`
+        );
+      } else if (userResponse == "paper" && computerDecision == "rock") {
+        alert(
+          `You won! you chose ${userResponse} and the computer chose ${computerDecision}`
+        );
+      } else {
+        alert("Something went wrong...");
+      }
+    </script>
+  </body>
+</html>
