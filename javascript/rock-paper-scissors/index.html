@@ -6,6 +6,13 @@
   </head>
   <body>
     <script type="text/javascript">
+    var wins = 0;
+    var ties = 0;
+    var losses = 0;
+    var continuePlaying = true;
+
+    while (continuePlaying) {
+
       var userResponse = prompt("Rock, paper or scissors?").toLowerCase();
 
       var correctResponse = false;
@@ -46,33 +53,46 @@
         alert(
           `You tied! You chose ${userResponse} and the computer chose ${computerDecision}`
         );
+        ties++;
       } else if (userResponse == "rock" && computerDecision == "scissors") {
         alert(
           `You won! you chose ${userResponse} and the computer chose ${computerDecision}`
         );
+        wins++;
       } else if (userResponse == "rock" && computerDecision == "paper") {
         alert(
           `You lost! you chose ${userResponse} and the computer chose ${computerDecision}`
         );
+        losses++;
       } else if (userResponse == "scissors" && computerDecision == "paper") {
         alert(
           `You won! you chose ${userResponse} and the computer chose ${computerDecision}`
         );
+        wins++;
       } else if (userResponse == "scissors" && computerDecision == "rock") {
         alert(
           `You lost! you chose ${userResponse} and the computer chose ${computerDecision}`
         );
+        losses++;
       } else if (userResponse == "paper" && computerDecision == "scissors") {
         alert(
           `You lost! you chose ${userResponse} and the computer chose ${computerDecision}`
         );
+        losses++;
       } else if (userResponse == "paper" && computerDecision == "rock") {
         alert(
           `You won! you chose ${userResponse} and the computer chose ${computerDecision}`
         );
+        wins++;
       } else {
         alert("Something went wrong...");
       }
+
+      alert(`You have won ${wins} times, you have tied ${ties} times and you have lost ${losses} times.`)
+
+      continuePlaying = confirm("Do you want to play again?")
+    }
+
     </script>
   </body>
 </html>
