@@ -36,3 +36,33 @@ for item in d:
 for key,value in d.items():
     print(key)
     print(value)
+
+# While loops
+
+while x < 5:
+    x += 1
+else: 
+    print("This executes when the while loop finally is not true")
+
+# Break breaks out of closest enclosing loop
+# Continue goes to the top of the closes enclosing loop
+# Pass does nothing
+
+
+x = [1,2,3]
+
+for item in x:
+    pass # Essentially is a placeholder to avoid a syntax error
+    # comment (Will get error without a pass)
+
+mystring = "Sean"
+
+for letter in mystring:
+    if letter == 'a':
+        continue # Will skip the print if the letter is a, but will continue looping
+    print(letter)
+
+for letting in mystring:
+    if letter == 'a':
+        break # Will completely stop loop
+    print(letter)
