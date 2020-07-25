@@ -58,3 +58,16 @@ var john = {
     name: 'john',
 }
 
+// Window is a special object
+
+window.screen.width // Returns the current width of the screen
+window.location.href // Returns the current url
+// If you change this, you will get redirected to the new url GREAT WAY TO REDIRECT USER TO ANOTHER WEBPAGE IN FUNCTION
+
+// DO NOT USE PREDEFINED OBJECTS AS ARGUMENTS OR VARIABLES
+
+function secondFun(window) {
+    console.log(window);
+}
+
+secondFun('Hi') // Doesn't log hi, it logs the window
