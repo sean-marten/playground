@@ -52,3 +52,9 @@ var john = {
 john.sayHi = sean.sayHi; // This adds the function to the john, DO NOT invoke it here
 
 // This works because this refers to the object that called it, if I used sean.name, it wouldn't work with other functions
+
+// Sometimes people like the trailing comma in the objects, as shown below (should put it there)
+var john = {
+    name: 'john',
+}
+
