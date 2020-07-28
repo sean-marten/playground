@@ -70,4 +70,5 @@ sayHello = function() {
 sayHello();
 
 sayHi();
-// LET AND CONST DO NOT HOIST
+// LET AND CONST DO NOT HOIST, vars even hoist in functions and for loops, vars become accessible even inside of forloops (and functions)
+// Let and const only stay in the block of code they are declared in
