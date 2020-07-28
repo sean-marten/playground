@@ -10,3 +10,8 @@ document.getElementById() // How to find an element by ID
 document.querySelector() // Also works, more powerful, can find classes and more than 1 level of classes
 
 var $articleDiv = document.getElementById() // Dollar sign signifies the variable is an html element
+
+document.querySelectorAll('p').setAttribute("style", "font-size: 65px;"); // Can set attributes that aren't defined/classes
+
+document.createElement(tagName); // Will create an HTML element
+document.body.appendChild(tag); // Will add it to the page
