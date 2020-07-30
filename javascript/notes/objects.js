@@ -1,3 +1,5 @@
+// You should always put your JS tag at the bottom of the HTML
+
 // To declare an object assign a variable to curly brackets, then use key-valued pairs
 var sean = {
     // Key : Value
