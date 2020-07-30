@@ -73,3 +73,14 @@ function secondFun(window) {
 }
 
 secondFun('Hi') // Doesn't log hi, it logs the window
+
+// No two arrays and no two objects are ever the same
+
+const trashcan1 = [];                 
+const trashcan2 = [];
+trashcan1 === trashcan2; // This is false (also with ==)
+const trashcan3 = trashcan1;
+trashcan1 === trashcan3; // This is true
+
+const nums = [1,2,3];
+nums.push[4]; // This works, even with a const
