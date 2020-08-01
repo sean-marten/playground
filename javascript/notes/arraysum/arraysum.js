@@ -4,7 +4,7 @@ const sumArrayForLoop = function(arr) {
         totalSum += arr[i];
     }
     return totalSum;
-}
+};
 
 const sumArrayNoForLoop = function(arr) {
     let totalSum = 0;
@@ -17,7 +17,15 @@ const sumArrayNoForLoop = function(arr) {
         console.log(array);
     });
     return totalSum;
-}
+};
+
+const sumArrayReduce = function(arr) {
+    // array.reduce(function(total, currentValue, currentIndex, arr), initialValue) - syntax for reduce
+    let sum = arr.reduce(function(a,b){
+        return a + b;
+    }, 0);
+    return sum;
+};
 
 const nums = [1,2,3,4,5,6];
 const nums2 = [2,4,6,8,1,2];
@@ -28,3 +36,5 @@ console.log(sumArrayForLoop(nums));
 console.log(sumArrayForLoop(nums2));
 console.log(sumArrayNoForLoop(nums));
 console.log(sumArrayNoForLoop(nums2));
+console.log(sumArrayReduce(nums));
+console.log(sumArrayReduce(nums2));
