@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- REACT LIBRARY -->
+        <script src="https://unpkg.com/react@15.5.4/dist/react.js"></script>
+        <!-- REACT DOM LIBRARY -->
+        <script src="https://unpkg.com/react-dom@15.5.4/dist/react-dom.js"></script>
+        <!-- BABEL LIBRARY -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+        <title>Stateless Functional Components</title>
+      </head>
+<body>
+    <div class="app">Didn't work</div>
+
+    <script type="text/babel">
+
+        // Stateless functional component
+        // These should be named with all first letter capitalized
+        // Should only have 1 return statement with our jsx
+        let ColorSpectrum = function() {
+            return(
+                <h1>Red, Orange, Yellow, Green, Blue, Indigo, Violet</h1>
+            );
+        }
+
+        ReactDOM.render(
+            // How to call a stateless function to render it
+            <ColorSpectrum/>,
+            document.querySelector(".app")
+        );
+
+    </script>
+</body>
+</html>
