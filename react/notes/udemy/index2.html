@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- REACT LIBRARY -->
+    <script src="https://unpkg.com/react@15.5.4/dist/react.js"></script>
+    <!-- REACT DOM LIBRARY -->
+    <script src="https://unpkg.com/react-dom@15.5.4/dist/react-dom.js"></script>
+    <!-- BABEL LIBRARY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+    <title>Let's React!</title>
+  </head>
+  <body>
+    <div class="para">Didn't work</div>
+    <div class="google">Didn't work</div>
+    <div class="list">Didn't work</div>
+
+    <script type="text/babel">
+
+    let ptag = <p>I am a paragraph!</p>;
+    
+      ReactDOM.render(
+        <p>I am a paragraph!</p>,
+        document.querySelector(".para")
+      );
+      ReactDOM.render(
+        <a href="https://www.google.com/">Link to google</a>,
+        document.querySelector(".google")
+      );
+      ReactDOM.render(
+        <ul>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+        </ul>,
+        document.querySelector(".list")
+      );
+    </script>
+  </body>
+</html>
