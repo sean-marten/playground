@@ -37,3 +37,7 @@
 // For project 1 use materialize
 
 // Look up elements and nodes and whatnot
+
+// end selectors for jquery?
+
+// The jquery html vs text?
