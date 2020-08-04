@@ -15,3 +15,4 @@ document.querySelectorAll('p').setAttribute("style", "font-size: 65px;"); // Can
 
 document.createElement(tagName); // Will create an HTML element
 document.body.appendChild(tag); // Will add it to the page
+
