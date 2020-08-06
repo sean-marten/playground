@@ -17,3 +17,12 @@ $(".btn").on("click", function () {
 
 // To do this properly
 $(document).on('click', '.btn') // This now lets us target all buttons on the document, if they are added now or in the future
+
+// To get this in jQuery: (in an event listening it would be what you clicked on)
+$(this)
+
+$(".btn").on("click", function () {
+    $(this).text() // returns the text of the button you clicked on
+  });
+
+// You can access anything in the element you got
