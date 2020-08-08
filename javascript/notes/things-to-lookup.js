@@ -3,7 +3,7 @@
     // The 4 different cases of this?
         // 4 - this means window
         // 3 - this means inside object
-        // 2 -
+        // 2 - 
         // 1 -
 
 // Different types architecture and protocols of APIs
@@ -36,8 +36,23 @@
 
 // For project 1 use materialize
 
-// Look up elements and nodes and whatnot
+// What is a node exactly, look at hierarchal structure for html
+    // Doesn't matter too much. 
+    // Node.js is a js framework, for the backend. Can create stuff through terminal (kick off premade js through the terminal)
+    // Inquirer prompts - allow you to talk to a user through the terminal, once the last prompt is done, you can read the prompts (via node packages).
+    // Node is really just a backend frameword for javascript
 
-// end selectors for jquery?
+// Selectors for jquery?
+    // They essentially are more specific selectors based on classes/html elements
+    // Pretty rare to use
 
 // The jquery html vs text?
+
+$('.class').innerhtml("") // This clears out whatever was in there 
+$('.class').text("") // Assigns the text
+
+// Execution context
+
+// Call, bind, apply function prototypes
+
+// You don't know JS, eloquent js
