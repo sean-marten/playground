@@ -4,3 +4,4 @@
 
 // DOM (Document object model) is an object-oriented representation of HTML
 
+// CORS - cross origin resource sharing

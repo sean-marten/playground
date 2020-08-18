@@ -52,7 +52,9 @@ $('.class').innerhtml("") // This clears out whatever was in there
 $('.class').text("") // Assigns the text
 
 // Execution context
+    // Basically what "this" means
 
 // Call, bind, apply function prototypes
+    // Apply - sets up two different varaibles, a function inside one to return data from another variable
 
-// You don't know JS, eloquent js
+// You don't know JS, eloquent js, JavaScript - the definitive guide
